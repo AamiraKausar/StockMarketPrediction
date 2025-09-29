@@ -1,0 +1,55 @@
+Stock Market Prediction – Write-up
+
+1. Introduction
+The stock market is highly dynamic, and predicting stock prices is challenging due to frequent fluctuations. This project predicts stock price movement (up or down) using historical data and machine learning. Two models were used:
+Logistic Regression – a simple classification model.
+Random Forest – a robust ensemble model for classification.
+
+The project is implemented in a Jupyter Notebook, making it easy to run and reproduce results.
+
+
+2.Dataset
+The dataset contains historical stock data with columns:
+Date – Trading date
+Open, High, Low, Close – Stock prices
+Volume – Number of shares traded
+
+A new target variable was created:
+Target = 1 if the next day’s close > today’s close (price goes up)
+
+
+3.Approach
+3.1 Data Preprocessing
+
+Missing values were handled using mean and median.
+Created the Target variable.
+Features selected: Open, High, Low, Close, Volume.
+
+Outlier handling: Applied log transformation instead of IQR to reduce the effect of extreme values while keeping all data points.
+
+3.2 Model Selection
+Logistic Regression – simple baseline classifier.
+Random Forest – handles non-linear relationships and reduces overfitting.
+Data split: 80% training, 20% testing.
+
+3.3 Model Training and Evaluation
+Both models trained using scikit-learn.
+
+Metrics used:
+Accuracy – overall correctness of predictions
+Precision – correctly predicted “up” days out of all predicted “up” days
+Recall – correctly predicted “up” days out of all actual “up” days
+
+Confusion matrices and plots were generated for visualization.Target = 0 otherwise (price goes down)
+
+
+4. Challenges Faced
+Feature selection: Choosing the most relevant features was tricky.
+Handling outliers: Instead of removing outliers with IQR, we applied log transformation to reduce extreme values’ effect while retaining all data.
+
+
+5.Improvements
+Use more data: Adding more historical stock data can help the model learn better patterns.
+Try other models: Experiment with models like Linear Regression or Decision Tree to compare results.
+Better features: Using extra information like stock trends or simple indicators may improve predictions.
+Tune the model: Adjusting Random Forest settings (like number of trees) can make predictions more accurate.
