@@ -26,10 +26,14 @@ All work is done in a **Jupyter Notebook** for easy execution.
    - Train Logistic Regression and Random Forest models  
    - Evaluate results and generate plots  
 
----
+
 
 ## Results
 Example images are included in the `Results/` folder:
+<img width="567" height="453" alt="actual VS predicted" src="https://github.com/user-attachments/assets/7ae1c167-f789-472e-8407-6504445de767" />
+<img width="521" height="453" alt="cm for LoR" src="https://github.com/user-attachments/assets/5f317aad-3db2-4906-87be-13d45fe3322d" />
+<img width="521" height="453" alt="cm for rf" src="https://github.com/user-attachments/assets/cbc7102c-1ff1-402c-bfc6-3097cdd27367" />
+<img width="1600" height="714" alt="matrix plot" src="https://github.com/user-attachments/assets/bfb4f070-4405-4683-b8f1-54326ae4655f" />
 
 
 ## Notes
